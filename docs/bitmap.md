@@ -2,7 +2,7 @@
 
 Turns any image (or batch / video frames) into dithered or halftone bitmap art: the Mac Plus, Game Boy and print-engraving look.
 
-![ApoDesign]([assets/bitmap1.jpg)
+![ApoDesign](assets/bitmap1.jpg)
 
 ## Look and size
 | Widget | What it does |
