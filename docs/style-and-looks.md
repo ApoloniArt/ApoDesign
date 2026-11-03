@@ -38,6 +38,7 @@ Three ways to make one:
 | `save_folder` | Where to save. Empty = your looks folder. A full path (e.g. `D:\ComfyUI\MyLooks`) is created if missing and remembered in `looks_folder.txt`. A bare name (e.g. `Arcade`) makes a sub-folder of the looks folder. |
 
 The `info` output says exactly what was saved, where, and what the look will be called in the Style list.
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave2.jpg)
 
 Save Look saves only the settings that differ from the node defaults, so look files stay small. If every setting on the node is still at its default, it saves all of them (and tells you so), so you can start from there.
 
