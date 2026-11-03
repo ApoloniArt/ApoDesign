@@ -35,6 +35,7 @@ Also: PNG transparency and masks in every render node, video and batch support t
    ApoDesign has no extra requirements (torch, numpy and Pillow already ship with ComfyUI), so you can install it via Comfy Manager without any fear of breaking your Comfy. Search **APO** in Manager. After installation, rename the folder to **ComfyUI-ApoDesign**.
 
 2. <h3 align="left">Manual Install [git clone]:</h3>
+
    ```
    cd ComfyUI/custom_nodes
    git clone https://github.com/ApoloniArt/ApoDesign ComfyUI-ApoDesign
