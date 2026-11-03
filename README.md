@@ -15,7 +15,7 @@
 ![ApoDesign](assets/nodes.jpg)
 <h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single look works in all three.</h3>
 
-## Nodes
+## **<ins>Nodes:</ins>**
 
 | Node | What it does |
 |---|---|
