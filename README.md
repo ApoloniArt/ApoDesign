@@ -11,7 +11,7 @@
   <a href="https://discord.gg/XDExAUzuZp"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white&style=flat"></a>
   <a href="https://github.com/ApoloniArt"><img alt="Follow on GitHub" src="https://img.shields.io/github/followers/ApoloniArt?label=Follow&logo=github&color=555&style=flat"></a>
 </p>
-
+![ApoDesign](assets/nodes.jpg)
 All render nodes share one colour engine, so they behave the same way, and a single **look** works in all three.
 
 ## Nodes
