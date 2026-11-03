@@ -77,6 +77,8 @@ ApoDesign is MIT licensed, see [LICENSE](https://github.com/ApoloniArt/ApoDesign
 
 Bundled fonts: **DejaVu Sans Mono** [Bitstream Vera licence](https://github.com/ApoloniArt/ApoDesign/blob/main/fonts/LICENSE_DEJAVU.txt), and [Bitcount Ink SIL Open Font License 1.1](https://github.com/ApoloniArt/ApoDesign/blob/main/web/fonts/OFL.txt).
 
+---
+
 *Made with love by [ApoloniArt](https://github.com/ApoloniArt) because I wanted inspiration on tap.* With **ApoGalleria** and **[Visual Aesthetics Library](https://github.com/ApoloniArt/Visual-Aesthetics-Library)**, I never have to worry again.
 Neither will you 💜
 Questions, feedback, or requests? Hit me up on Discord, I'm very friendly 😘
