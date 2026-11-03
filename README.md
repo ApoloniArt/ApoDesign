@@ -15,7 +15,7 @@
 ![ApoDesign](assets/nodes.jpg)
 <h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single look works in all three.</h3>
 
-## **<ins>Nodes:</ins>**
+## **<ins>NODES:</ins>**
 
 | Node | What it does |
 |---|---|
@@ -28,7 +28,7 @@
 
 Also: PNG transparency and masks in every render node, video and batch support that stays steady between frames and light on memory, and a plain-English `style_prompt` or JSON `style_json` input on every render node.
 
-## Your own looks
+## **<ins>YOUR OWN LOOKS:</ins>**
 
 Tune a node, connect its `settings` output to **ApoDesign Save Look**, name it, run, press **R**: your look is now in the Style list, marked with a star. You can also have an LLM write looks for you (a ready-made system prompt is in `looks/_LLM_system_prompt.txt`) or write them by hand. Folders become menus. Full guide: [docs/style-and-looks.md](docs/style-and-looks.md).
 
