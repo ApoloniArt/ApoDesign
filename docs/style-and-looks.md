@@ -36,6 +36,7 @@ Three ways to make one:
 | `bitmap_settings`, `ascii_settings`, `pixel_art_settings` | Connect the `settings` output of the node(s) you tuned. |
 | `look_json` | A whole look as JSON (for example from an LLM), or just widget names and values. The settings inputs are added on top of it. |
 | `save_folder` | Where to save. Empty = your looks folder. A full path (e.g. `D:\ComfyUI\MyLooks`) is created if missing and remembered in `looks_folder.txt`. A bare name (e.g. `Arcade`) makes a sub-folder of the looks folder. |
+
 ![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave3.jpg)
 
 The `info` output says exactly what was saved, where, and what the look will be called in the Style list.
