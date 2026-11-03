@@ -1,0 +1,1 @@
+# ApoDesign needs nothing beyond ComfyUI (torch, numpy and Pillow already ship with it).

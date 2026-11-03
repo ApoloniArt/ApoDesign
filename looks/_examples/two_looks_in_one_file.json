@@ -1,0 +1,44 @@
+{
+  "looks": [
+    {
+      "name": "Swamp dither",
+      "description": "Murky greens, blue-noise grain.",
+      "all": {
+        "custom_palette": "#0b1a10,#1f4d2b,#5c8a3c,#d7e8a0"
+      },
+      "bitmap": {
+        "method": "blue_noise",
+        "pixel_size": 3,
+        "color_mode": "tonal"
+      },
+      "ascii": {
+        "columns": 120,
+        "color_mode": "tonal"
+      },
+      "pixel_art": {
+        "target_width": 220,
+        "match": "tone"
+      }
+    },
+    {
+      "name": "Hot pink halftone",
+      "description": "Pink and cream halftone dots.",
+      "all": {
+        "custom_palette": "#2b0a2b,#d6247e,#ff9ac8,#fff3e0"
+      },
+      "bitmap": {
+        "method": "halftone_dots",
+        "halftone_cell": 7,
+        "color_mode": "palette"
+      },
+      "ascii": {
+        "columns": 100,
+        "color_mode": "palette"
+      },
+      "pixel_art": {
+        "target_width": 200,
+        "match": "colour"
+      }
+    }
+  ]
+}

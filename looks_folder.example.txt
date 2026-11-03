@@ -1,0 +1,9 @@
+# ApoDesign: EXAMPLE of the file 'looks_folder.txt' (copy this file to looks_folder.txt
+# to use it; Save Look also creates looks_folder.txt for you when you save to an
+# outside folder). It is not read under this name.
+# Extra folders that hold your own look files (one per line).
+# Lines starting with # are ignored. Example (remove the # to use it):
+# D:\ComfyUI\MyLooks
+# The first folder listed is where "ApoDesign Save Look" saves new looks.
+# If this file is empty, looks are read from and saved to the "looks" folder
+# next to this file.

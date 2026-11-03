@@ -1,0 +1,15 @@
+[project]
+name = "apodesign"
+description = "Retro graphic styles for ComfyUI: dithered bitmap art, ASCII text art and pixel art from images and video, with one-click looks, palettes and your own saved looks."
+version = "0.7.2"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/apoloniart/ApoDesign"
+
+[tool.comfy]
+PublisherId = "apoloniart"
+DisplayName = "ApoDesign"
+Icon = ""
+Tags = ["image", "retro", "pixel-art", "ascii", "dither", "bitmap", "video"]

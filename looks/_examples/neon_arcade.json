@@ -1,0 +1,23 @@
+{
+  "name": "Neon arcade",
+  "description": "Bright 16-colour arcade look with clean, steady dithering.",
+  "all": {
+    "palette_preset": "pico8"
+  },
+  "bitmap": {
+    "method": "bayer",
+    "bayer_size": "4",
+    "target_width": 200,
+    "color_mode": "palette"
+  },
+  "ascii": {
+    "columns": 110,
+    "charset": "standard",
+    "color_mode": "palette"
+  },
+  "pixel_art": {
+    "target_width": 200,
+    "match": "colour",
+    "outline": "dark"
+  }
+}

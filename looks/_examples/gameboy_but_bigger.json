@@ -1,0 +1,15 @@
+{
+  "name": "Game Boy, extra chunky",
+  "description": "The Game Boy look, but with fewer, larger pixels.",
+  "extends": "Game Boy (green)",
+  "bitmap": {
+    "target_width": 96
+  },
+  "ascii": {
+    "columns": 60
+  },
+  "pixel_art": {
+    "target_width": 96,
+    "outline": "dark"
+  }
+}
