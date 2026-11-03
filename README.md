@@ -30,16 +30,17 @@ Also: PNG transparency and masks in every render node, video and batch support t
 
 ## Installation
 
-1. **Comfy Manager Install [recommended]:** ApoDesign has no extra requirements (torch, numpy and Pillow already ship with ComfyUI), so you can install it via Comfy Manager without any fear of breaking your Comfy. Search **APO** in Manager. After installation, rename the folder to **ComfyUI-ApoDesign**.
+1. **Comfy Manager Install [recommended]:
+   ** ApoDesign has no extra requirements (torch, numpy and Pillow already ship with ComfyUI), so you can install it via Comfy Manager without any fear of breaking your Comfy. Search **APO** in Manager. After installation, rename the folder to **ComfyUI-ApoDesign**.
 
-2. **Manual Install [git clone]:**
+3. **Manual Install [git clone]:**
    ```
    cd ComfyUI/custom_nodes
    git clone https://github.com/ApoloniArt/ApoDesign ComfyUI-ApoDesign
    ```
    No Git? On GitHub press *Code > Download ZIP*, unpack it, and put the folder into `ComfyUI/custom_nodes/` named `ComfyUI-ApoDesign`.
 
-3. Restart ComfyUI fully (close the console window too). The nodes appear under **ApoDesign** in the Add Node menu.
+4. Restart ComfyUI fully (close the console window too). The nodes appear under **ApoDesign** in the Add Node menu.
 
 **Update:** in Comfy Manager press *Update*, or for a manual install run `git pull` inside `custom_nodes/ComfyUI-ApoDesign`, then restart. Your own looks and `looks_folder.txt` are not part of the repository, so an update never touches them (see [Style, Save Look and your own looks](docs/style-and-looks.md)).
 
