@@ -1,6 +1,7 @@
 # Style node, Save Look and your own looks
 
 ## ApoDesign Style
+![Style Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/style1.jpg)
 
 The easy way in. Pick a **look**, connect the matching output to the `style_json` input of a render node, and that node is set up for you. You do not need to know what any widget does.
 
