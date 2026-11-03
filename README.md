@@ -67,15 +67,15 @@ See the [docs](docs/README.md) folder: a page per node, the Style / Save Look gu
 
 Double-click `RUN_TESTS.bat` in the `ComfyUI-ApoDesign` folder. It prints one PASS / FAIL line per test (details in [docs/testing.md](docs/testing.md)).
 
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md).
-
 ## Attribution and Licenses
 
 ApoDesign is MIT licensed, see [LICENSE](https://github.com/ApoloniArt/ApoDesign/blob/main/LICENSE). If you use it in a project, a mention of "ApoDesign by ApoloniArt" is required and much appreciated, see [NOTICE](https://github.com/ApoloniArt/ApoDesign/blob/main/NOTICE).
 
 Bundled fonts: **DejaVu Sans Mono** [Bitstream Vera licence](https://github.com/ApoloniArt/ApoDesign/blob/main/fonts/LICENSE_DEJAVU.txt), and [Bitcount Ink SIL Open Font License 1.1](https://github.com/ApoloniArt/ApoDesign/blob/main/web/fonts/OFL.txt).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
