@@ -71,7 +71,7 @@ Double-click `RUN_TESTS.bat` in the `ComfyUI-ApoDesign` folder. It prints one PA
 
 See [CHANGELOG.md](CHANGELOG.md).
 
-## Credits and licences
+## Credits and licenses
 
 ApoDesign is MIT licensed, see [LICENSE](https://github.com/ApoloniArt/ApoDesign/blob/main/LICENSE). If you use it in a project, a mention of "ApoDesign by ApoloniArt" is required and much appreciated, see [NOTICE](https://github.com/ApoloniArt/ApoDesign/blob/main/NOTICE).
 
