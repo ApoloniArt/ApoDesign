@@ -79,6 +79,6 @@ Bundled fonts: **DejaVu Sans Mono** [Bitstream Vera licence](https://github.com/
 
 ---
 
-*Made with love by [ApoloniArt](https://github.com/ApoloniArt) because I wanted inspiration on tap.* With **ApoGalleria** and **[Visual Aesthetics Library](https://github.com/ApoloniArt/Visual-Aesthetics-Library)**, I never have to worry again.
-Neither will you 💜
-Questions, feedback, or requests? Hit me up on Discord, I'm very friendly 😘
+*Made with love by [Apolonia](https://github.com/ApoloniArt) because I adore image style design.* With **ApoDesign** I can create amazing bitmap, text, and pixel based images & video.
+And so can you! 💜
+Questions, feedback, or requests? Hit me up on my Discord, I'm very friendly 😘
