@@ -13,7 +13,7 @@
 </p>
 
 ![ApoDesign](assets/nodes.jpg)
-<h1 align="center">All render nodes share one colour engine, so they behave the same way, and a single **look** works in all three.</h1>
+<h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single **look** works in all three.</h1>
 
 ## Nodes
 
