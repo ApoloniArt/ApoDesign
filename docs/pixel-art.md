@@ -1,7 +1,7 @@
 # ApoDesign Pixel Art
 
 Turns any image (or batch / video frames) into clean, hand-made-looking pixel art. Where Bitmap is about dithering and halftone, Pixel Art is about flat colour, crisp edges and a small palette.
-![Pixel Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/pixel1.jpg)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/pixel1.jpg)
 
 ## The pixels
 | Widget | What it does |
@@ -40,4 +40,4 @@ Nothing is random, the palette is shared by all frames (built from up to 16 even
 ---
 
 ## Embedded example image
-![Pixel Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/pixel2.png)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/pixel2.png)
