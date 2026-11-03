@@ -13,7 +13,7 @@
 </p>
 
 ![ApoDesign](assets/nodes.jpg)
-<h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single look works in all three.</h1>
+<h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single look works in all three.</h3>
 
 ## Nodes
 
@@ -30,7 +30,7 @@ Also: PNG transparency and masks in every render node, video and batch support t
 
 ## Installation
 
-1. **Comfy Manager Install [recommended]:**
+1. <h3 align="center">Comfy Manager Install [recommended]:</h3>
    
    ApoDesign has no extra requirements (torch, numpy and Pillow already ship with ComfyUI), so you can install it via Comfy Manager without any fear of breaking your Comfy. Search **APO** in Manager. After installation, rename the folder to **ComfyUI-ApoDesign**.
 
