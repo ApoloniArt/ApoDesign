@@ -59,10 +59,6 @@ Prefer words? Type `gameboy palette, atkinson dither, 96 wide, high contrast` in
 
 Tune a node, connect its `settings` output to **ApoDesign Save Look**, name it, run, press **R**: your look is now in the Style list, marked with a star. You can also have an LLM write looks for you (a ready-made system prompt is in `looks/_LLM_system_prompt.txt`) or write them by hand. Folders become menus. Full guide: [docs/style-and-looks.md](docs/style-and-looks.md).
 
-## The banner
-
-Every node has a slim banner with GitHub and Discord icons and the node name in Bitcount Ink. It is cosmetic only. See [docs/banner.md](docs/banner.md).
-
 ## Documentation
 
 See the [docs](docs/README.md) folder: a page per node, the Style / Save Look guide, all 47 built-in looks, Palette, Transparency, Video and memory, a generated reference of every widget, and Testing.
