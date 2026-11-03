@@ -1,7 +1,7 @@
 # ApoDesign Ascii
 
 Turns any image (or batch / video frames) into text art, drawn as an image, and also hands you the art as plain text.
-![Ascii Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii1.jpg)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii1.jpg)
 
 ## How characters are chosen (`glyph_match`)
 | Mode | What it does |
@@ -39,4 +39,4 @@ Same as Bitmap, plus text-art words: `braille, 160 columns, green phosphor`, `qu
 ---
 
 ## Embedded example image
-![Ascii Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii2.png)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii2.png)
