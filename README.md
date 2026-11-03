@@ -1,8 +1,16 @@
-# ApoDesign
-
-Retro graphic styles for ComfyUI: turn images and video into dithered bitmap art, text (ASCII) art and clean pixel art. No dependencies beyond ComfyUI itself (torch and Pillow already ship with it).
-
-**Version 0.7.2** | MIT licence | by [ApoloniArt](https://github.com/ApoloniArt) | [Discord](https://discord.gg/XDExAUzuZp)
+<h1 align="center">ApoDesign</h1>
+<p align="center"><b>Retro graphic styles for ComfyUI: dithered bitmap art, ASCII text art and pixel art from images and video.</b></p>
+<p align="center">
+  <a href="https://github.com/comfyanonymous/ComfyUI"><img alt="ComfyUI extension" src="https://img.shields.io/badge/ComfyUI-Extension-5ea500?style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/releases"><img alt="Version" src="https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fapoloniart%2FApoDesign%2Fmain%2Fpyproject.toml&query=%24.project.version&label=Version&color=ed7d31&style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/apoloniart/ApoDesign?label=License&color=e0414a&style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/blob/main/requirements.txt"><img alt="Dependencies" src="https://img.shields.io/badge/Dependencies-0-0075c2?style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/commits"><img alt="Last update" src="https://img.shields.io/github/last-commit/apoloniart/ApoDesign?label=Last%20Update&color=ed7d31&style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/commits"><img alt="Activity" src="https://img.shields.io/github/commit-activity/m/apoloniart/ApoDesign?label=Activity&color=d4b300&style=flat"></a>
+  <a href="https://github.com/ApoloniArt/ApoDesign/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/apoloniart/ApoDesign?logo=github&color=555&style=flat"></a>
+  <a href="https://discord.gg/XDExAUzuZp"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white&style=flat"></a>
+  <a href="https://github.com/ApoloniArt"><img alt="Follow on GitHub" src="https://img.shields.io/github/followers/ApoloniArt?label=Follow&logo=github&color=555&style=flat"></a>
+</p>
 
 All render nodes share one colour engine, so they behave the same way, and a single **look** works in all three.
 
