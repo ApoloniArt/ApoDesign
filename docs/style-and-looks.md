@@ -21,8 +21,6 @@ Three ways to make one:
 1. **Save from ComfyUI.** Tune a Bitmap, Ascii or Pixel Art node, connect its `settings` output to **ApoDesign Save Look**, give it a name and run it.
 ![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave1.jpg)
 
-![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave2.jpg)
-
 ![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave3.jpg)
 
 3. **Let an LLM write it.** Use `looks/_LLM_system_prompt.txt` as the LLM's system prompt, describe the look in plain words, and paste the reply into Save Look's `look_json` box (or save the reply as a `.json` file in your looks folder).
@@ -73,6 +71,8 @@ A look file is a `.json` file:
 - Every folder listed in `looks_folder.txt` becomes a menu named after it in the Style list, and its sub-folders become sub-menus: a look in `D:\MyLooks\Arcade` shows as `★ MyLooks > Arcade > Look name`.
 - Inside the built-in `looks` folder, its sub-folders are the menus.
 - The first folder in `looks_folder.txt` is where Save Look saves by default.
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave2.jpg)
+  
 - You can also point ApoDesign at folders with the environment variable `APODESIGN_LOOKS` (folders separated like a PATH).
 
 ### Keeping your looks safe when you update
