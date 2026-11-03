@@ -21,8 +21,6 @@ Three ways to make one:
 1. **Save from ComfyUI.** Tune a Bitmap, Ascii or Pixel Art node, connect its `settings` output to **ApoDesign Save Look**, give it a name and run it.
 ![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave1.jpg)
 
-![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave3.jpg)
-
 3. **Let an LLM write it.** Use `looks/_LLM_system_prompt.txt` as the LLM's system prompt, describe the look in plain words, and paste the reply into Save Look's `look_json` box (or save the reply as a `.json` file in your looks folder).
 4. **Write one by hand.** Copy a file from `looks/_examples/` and edit it.
 
@@ -38,6 +36,7 @@ Three ways to make one:
 | `bitmap_settings`, `ascii_settings`, `pixel_art_settings` | Connect the `settings` output of the node(s) you tuned. |
 | `look_json` | A whole look as JSON (for example from an LLM), or just widget names and values. The settings inputs are added on top of it. |
 | `save_folder` | Where to save. Empty = your looks folder. A full path (e.g. `D:\ComfyUI\MyLooks`) is created if missing and remembered in `looks_folder.txt`. A bare name (e.g. `Arcade`) makes a sub-folder of the looks folder. |
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/looksave3.jpg)
 
 The `info` output says exactly what was saved, where, and what the look will be called in the Style list.
 ![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/style-save-look.jpg)
