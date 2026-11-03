@@ -1,5 +1,6 @@
 # Transparency
 ComfyUI's Load Image splits a PNG into `image` (the colours) and `mask` (the transparency; **white = transparent**). Connect that `mask` to the `mask` input of any ApoDesign node and transparent areas stay transparent:
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/transparency1.jpg)
 
 - Transparent areas are left out of palettes and never bleed into the pixels next to them (no coloured fringes or halos).
 - The transparency follows the node's own grid, so it is as chunky as the pixels, characters or dots.
@@ -20,3 +21,8 @@ A mask that is all black (nothing transparent) is ignored automatically, so ordi
 In Bitmap and Ascii, `mix_mode = mask` still uses the `mask` input to paint where colour appears; in that case it is not used as transparency.
 
 Note: some nodes (for example Create Video) cannot take a 4-channel image. For transparent video use `separate`.
+
+---
+
+## Embedded example image
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/transparency2.png)
