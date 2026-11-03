@@ -1,4 +1,4 @@
-<h1 align="center">ApoDesign</h1>
+<h1 align="center">𝔸𝕡𝕠𝔻𝕖𝕤𝕚𝕘𝕟</h1>
 <p align="center"><b>Retro graphic styles for ComfyUI: dithered bitmap art, ASCII text art and pixel art from images and video.</b></p>
 <p align="center">
   <a href="https://github.com/comfyanonymous/ComfyUI"><img alt="ComfyUI extension" src="https://img.shields.io/badge/ComfyUI-Extension-5ea500?style=flat"></a>
