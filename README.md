@@ -15,7 +15,7 @@
 ![ApoDesign](assets/nodes.jpg)
 <h3 align="center">All render nodes share one colour engine, so they behave the same way, and a single look works in all three.</h3>
 
-## **<ins>NODES:</ins>**
+## **<ins>Nodes:</ins>**
 
 | Node | What it does |
 |---|---|
@@ -28,15 +28,15 @@
 
 Also: PNG transparency and masks in every render node, video and batch support that stays steady between frames and light on memory, and a plain-English `style_prompt` or JSON `style_json` input on every render node.
 
-## **<ins>YOUR OWN LOOKS:</ins>**
+## **<ins>Creating your own Looks:</ins>**
 
 Tune a node, connect its `settings` output to **ApoDesign Save Look**, name it, run, press **R**: your look is now in the Style list, marked with a star. You can also have an LLM write looks for you (a ready-made system prompt is in `looks/_LLM_system_prompt.txt`) or write them by hand. Folders become menus. Full guide: [docs/style-and-looks.md](docs/style-and-looks.md).
 
-## Documentation
+## **<ins>Node guides:</ins>**
 
 See the [docs](docs/README.md) folder: a page per node, the Style / Save Look guide, all 47 built-in looks, Palette, Transparency, Video and memory, a generated reference of every widget, and Testing.
 
-## Installation
+## **<ins>Installation:</ins>**
 
 1. <h3 align="left">Comfy Manager Install [recommended]:</h3>
    
@@ -54,11 +54,11 @@ See the [docs](docs/README.md) folder: a page per node, the Style / Save Look gu
 
 **Update:** in Comfy Manager press *Update*, or for a manual install run `git pull` inside `custom_nodes/ComfyUI-ApoDesign`, then restart. Your own looks and `looks_folder.txt` are not part of the repository, so an update never touches them (see [Style, Save Look and your own looks](docs/style-and-looks.md)).
 
-## Check your install
+## **<ins>Check your Install:</ins>**
 
 Double-click `RUN_TESTS.bat` in the `ComfyUI-ApoDesign` folder. It prints one PASS / FAIL line per test (details in [docs/testing.md](docs/testing.md)).
 
-## Quick start
+## **<ins>Quick Start:</ins>**
 
 1. Add **Load Image**, **ApoDesign Style** and **ApoDesign Pixel Art**.
 2. Connect the image to Pixel Art's `image`, and Style's `pixel_art` output to Pixel Art's `style_json`.
@@ -67,13 +67,13 @@ Double-click `RUN_TESTS.bat` in the `ComfyUI-ApoDesign` folder. It prints one PA
 
 Prefer words? Type `gameboy palette, atkinson dither, 96 wide, high contrast` into any render node's `style_prompt`. The node's `settings` output shows exactly what it understood.
 
-## Attribution and Licenses
+## **<ins>Attribution & Licenses:</ins>**
 
 ApoDesign is MIT licensed, see [LICENSE](https://github.com/ApoloniArt/ApoDesign/blob/main/LICENSE). If you use it in a project, a mention of "ApoDesign by ApoloniArt" is required and much appreciated, see [NOTICE](https://github.com/ApoloniArt/ApoDesign/blob/main/NOTICE).
 
 Bundled fonts: **DejaVu Sans Mono** [Bitstream Vera licence](https://github.com/ApoloniArt/ApoDesign/blob/main/fonts/LICENSE_DEJAVU.txt), and [Bitcount Ink SIL Open Font License 1.1](https://github.com/ApoloniArt/ApoDesign/blob/main/web/fonts/OFL.txt).
 
-## Changelog
+## **<ins>Changelog:</ins>**
 
 See [CHANGELOG.md](CHANGELOG.md).
 
