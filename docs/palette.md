@@ -1,6 +1,7 @@
 # ApoDesign Palette
 
 Makes a palette and a swatch picture of it. `palette` is the hex list (paste it into any `custom_palette` widget); `style_json` sets `custom_palette` (plus `color_mode` and, for Pixel Art, `match`, to suit the palette) when connected to a render node.
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/palette.jpg)
 
 | mode | What it does |
 |---|---|
