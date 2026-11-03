@@ -20,11 +20,11 @@
 | Node | What it does |
 |---|---|
 | [ApoDesign Bitmap](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/bitmap.md) | Dither and halftone art: Mac Plus, Game Boy, newspaper and engraving looks. 12 dither methods, any palette. |
-| **ApoDesign Ascii** | Text art drawn as an image *and* returned as plain text. Ramp, shape-matching and braille modes, custom fonts. |
-| **ApoDesign Pixel Art** | Flat colour, crisp edges, small palette, selective outlines, painterly simplify. |
-| **ApoDesign Style** | The easy way in: pick one of 47 built-in looks (or your own) and connect it to any render node. |
-| **ApoDesign Palette** | Build a palette from a preset, hex codes, an image, a gradient or a colour scheme. |
-| **ApoDesign Save Look** | Save the settings you tuned as your own look, so it appears in the Style list. |
+| [ApoDesign Ascii](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/ascii.md) | Text art drawn as an image *and* returned as plain text. Ramp, shape-matching and braille modes, custom fonts. |
+| [ApoDesign Pixl](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/pixel-art.md) | Flat colour, crisp edges, small palette, selective outlines, painterly simplify. |
+| [ApoDesign Style](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/style-and-looks.md) | The easy way in: pick one of 47 built-in looks (or your own) and connect it to any render node. |
+| [ApoDesign Palette](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/palette.md) | Build a palette from a preset, hex codes, an image, a gradient or a colour scheme. |
+| [ApoDesign Save Look](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/style-and-looks.md) | Save the settings you tuned as your own look, so it appears in the Style list. |
 
 Also: PNG transparency and masks in every render node, video and batch support that stays steady between frames and light on memory, and a plain-English `style_prompt` or JSON `style_json` input on every render node.
 
