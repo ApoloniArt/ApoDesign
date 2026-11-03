@@ -2,7 +2,7 @@
 
 Turns any image (or batch / video frames) into dithered or halftone bitmap art: the Mac Plus, Game Boy and print-engraving look.
 
-![Bitmap Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap1.jpg)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap1.jpg)
 
 ## Look and size
 | Widget | What it does |
@@ -42,4 +42,4 @@ Ordered methods use a fixed pattern locked to the pixel grid, so frames don't sh
 ---
 
 ## Embedded example image
-![Bitmap Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap2.png)
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap2.png)
