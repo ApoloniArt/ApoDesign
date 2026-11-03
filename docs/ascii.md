@@ -1,6 +1,7 @@
 # ApoDesign Ascii
 
 Turns any image (or batch / video frames) into text art, drawn as an image, and also hands you the art as plain text.
+![Ascii Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii1.jpg)
 
 ## How characters are chosen (`glyph_match`)
 | Mode | What it does |
@@ -34,3 +35,8 @@ Same as Bitmap, plus text-art words: `braille, 160 columns, green phosphor`, `qu
 
 ## Video
 `ramp` and `braille` with `none`, `bayer` or `blue_noise` are fully steady between frames. `shape` is steady for steady footage. Error diffusion shimmers slightly. Frames go through in small chunks, and the output is written straight into one pre-allocated tensor.
+
+---
+
+## Embedded example image
+![Ascii Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/ascii2.png)
