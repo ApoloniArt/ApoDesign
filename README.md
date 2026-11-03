@@ -19,7 +19,7 @@
 
 | Node | What it does |
 |---|---|
-| **ApoDesign Bitmap** | Dither and halftone art: Mac Plus, Game Boy, newspaper and engraving looks. 12 dither methods, any palette. |
+| [ApoDesign Bitmap](https://github.com/ApoloniArt/ApoDesign/blob/main/docs/bitmap.md) | Dither and halftone art: Mac Plus, Game Boy, newspaper and engraving looks. 12 dither methods, any palette. |
 | **ApoDesign Ascii** | Text art drawn as an image *and* returned as plain text. Ramp, shape-matching and braille modes, custom fonts. |
 | **ApoDesign Pixel Art** | Flat colour, crisp edges, small palette, selective outlines, painterly simplify. |
 | **ApoDesign Style** | The easy way in: pick one of 47 built-in looks (or your own) and connect it to any render node. |
