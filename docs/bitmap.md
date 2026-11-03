@@ -36,7 +36,7 @@ Example: *B&W shadows, colour highlights* = `palette_preset` black_white, `color
 
 `ink_mask` is only filled in when the `ink_mask_output` widget is on. Off (the default), it is plain black and costs no memory.
 
-![Bitmap Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap2.png)
-
 ## Video and batches
 Ordered methods use a fixed pattern locked to the pixel grid, so frames don't shimmer. A k-means palette is computed once across the whole batch. Error diffusion works per frame, so it is more organic but may shimmer slightly in motion. Frames are processed in chunks of 8, so long clips don't exhaust VRAM; if the GPU runs out of memory the node retries on the CPU.
+
+![Bitmap Node](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/bitmap2.png)
