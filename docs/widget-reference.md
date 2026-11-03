@@ -1,6 +1,7 @@
 # Widget reference
 
 Generated from the code, so it always matches the nodes. Every widget below can also be set from `style_prompt`, `style_json`, a Style-node look or your own look file, using the widget's name.
+![ApoDesign](https://github.com/ApoloniArt/ApoDesign/blob/main/assets/widgets.jpg)
 
 ## ApoDesign Bitmap
 
