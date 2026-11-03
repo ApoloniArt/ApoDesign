@@ -79,6 +79,6 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
-*Made with love by [Apolonia](https://github.com/ApoloniArt) because I adore image style design.* With **ApoDesign** I can create amazing bitmap, text, and pixel based images & video.
+*Made with love by [Apolonia](https://github.com/ApoloniArt) because I adore image style design.* With **ApoDesign** I can create amazing bitmap, ascii, and pixel based images & video.
 And so can you! 💜
 Questions, feedback, or requests? Hit me up on my Discord, I'm very friendly 😘
