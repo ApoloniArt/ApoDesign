@@ -54,7 +54,7 @@ See the [docs](docs/README.md) folder: a page per node, the Style / Save Look gu
 
 **Update:** in Comfy Manager press *Update*, or for a manual install run `git pull` inside `custom_nodes/ComfyUI-ApoDesign`, then restart. Your own looks and `looks_folder.txt` are not part of the repository, so an update never touches them (see [Style, Save Look and your own looks](docs/style-and-looks.md)).
 
-## **<ins>Check your Install</ins>**
+## **🤔<ins>Check your Install</ins>**
 
 Double-click `RUN_TESTS.bat` in the `ComfyUI-ApoDesign` folder. It prints one PASS / FAIL line per test (details in [docs/testing.md](docs/testing.md)).
 
@@ -73,9 +73,9 @@ ApoDesign is MIT licensed, see [LICENSE](https://github.com/ApoloniArt/ApoDesign
 
 Bundled fonts: **DejaVu Sans Mono** [Bitstream Vera licence](https://github.com/ApoloniArt/ApoDesign/blob/main/fonts/LICENSE_DEJAVU.txt), and [Bitcount Ink SIL Open Font License 1.1](https://github.com/ApoloniArt/ApoDesign/blob/main/web/fonts/OFL.txt).
 
-## **<ins>Changelog</ins>**
+---
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](CHANGELOG.md) for development detail.
 
 ---
 
