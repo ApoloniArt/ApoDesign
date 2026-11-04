@@ -372,6 +372,14 @@ def test_banner_files_are_in_place():
     assert "github.com/ApoloniArt" in js and "discord.gg/XDExAUzuZp" in js
     font = open(os.path.join(root, "web", "apodesign_font.js"), encoding="utf-8").read()
     assert "data:font/woff2;base64," in font and len(font) > 5000
+    # the font must also be a real file next to the script (the page cannot use embedded
+    # fonts under ComfyUI's content security policy) and the script must load it from there
+    assert os.path.getsize(os.path.join(root, "web", "fonts", "BitcountInk-500.woff2")) > 5000
+    assert "import.meta.url" in js and "fonts/BitcountInk-500.woff2" in js
+    # the banner must take part in the saved widget list (never "serialize = false"),
+    # otherwise ComfyUI saves by position but restores skipping it and every value shifts
+    assert "widget.serialize = true" in js and "widget.serialize = false" not in js
+    assert "serializeValue" in js and "widgets_values" in js
 
 
 def test_builtin_look_names_have_no_slash():
