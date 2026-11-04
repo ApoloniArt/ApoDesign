@@ -50,7 +50,7 @@ See the [docs](docs/README.md) folder: a page per node, the Style / Save Look gu
    ```
    No Git? On GitHub press *Code > Download ZIP*, unpack it, and put the folder into `ComfyUI/custom_nodes/` named `ComfyUI-ApoDesign`.
 
-3. Restart ComfyUI fully (close the console window too). The nodes appear under **ApoDesign** in the Add Node menu.
+3. Restart ComfyUI fully (close the console window too). All 6 nodes appear under **ApoDesign** in the Add Node menu.
 
 **Update:** in Comfy Manager press *Update*, or for a manual install run `git pull` inside `custom_nodes/ComfyUI-ApoDesign`, then restart. Your own looks and `looks_folder.txt` are not part of the repository, so an update never touches them (see [Style, Save Look and your own looks](docs/style-and-looks.md)).
 
