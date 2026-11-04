@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 0.7.4
+- Fixed (for real): the node fields still shifted after switching ComfyUI tabs, reloading the page or copy/paste (values on the wrong widgets, NaN, null, empty, workflow would not run). Cause: the banner was marked "do not save", so ComfyUI saved the values counting the banner but restored them skipping it. The banner now takes part in saving like every other widget (it is still never sent to ComfyUI when you run), so saving and restoring agree and nothing depends on a patch. A small check still puts values back by position as a safety net. **Workflows saved while the problem was showing contain wrong values: add the nodes fresh (or reopen an earlier save) and set them again.**
+
+## 0.7.3
+- Fixed: after switching ComfyUI tabs (or copy/paste, or reloading a workflow) the node fields were shifted by one: values landed on the wrong widgets, some became NaN, null or empty, and the workflow would not run. The banner now puts every saved value back on the right widget. Workflows that were saved while the problem was showing keep their wrong values and need to be set again.
+- Fixed: the Bitcount Ink font did not show on newer ComfyUI versions, which block fonts embedded in the page. The font is now loaded from its file in `web/fonts` (the embedded copy stays as a fallback).
+
 ## 0.7.2
 - `looks_folder.txt` is no longer shipped (it is yours and is ignored by Git); `looks_folder.example.txt` shows the format.
 - Banner polish: spacing and font size match ApoGalleria exactly; the Style, Palette and Save Look banners sit the same distance above the first field as on the three render nodes.
