@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+tests/test_results.txt
+# your own settings and looks: never part of the repository
+looks_folder.txt
+looks/*.json
+looks/*/
+!looks/_examples/
+.DS_Store
+Thumbs.db
