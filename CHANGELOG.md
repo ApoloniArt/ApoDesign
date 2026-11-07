@@ -2,6 +2,9 @@
 
 Newest first.
 
+## 0.7.5
+- New in the Ascii node: **text_order**. Off by default. `in_order` fills the inked cells with your own text, one letter after another in reading order, so the words can be read (for example LEST WE FORGET on a silhouette). `in_order_per_row` starts the text again on every row. Set the words in `order_text` (it repeats) and how much of the picture gets letters with `order_threshold`. Works with ramp and shape modes, respects a transparency mask, and the `text` output holds the same lettering. The three new widgets are at the bottom of the node, so workflows saved before 0.7.5 keep their values.
+
 ## 0.7.4
 - Fixed (for real): the node fields still shifted after switching ComfyUI tabs, reloading the page or copy/paste (values on the wrong widgets, NaN, null, empty, workflow would not run). Cause: the banner was marked "do not save", so ComfyUI saved the values counting the banner but restored them skipping it. The banner now takes part in saving like every other widget (it is still never sent to ComfyUI when you run), so saving and restoring agree and nothing depends on a patch. A small check still puts values back by position as a safety net. **Workflows saved while the problem was showing contain wrong values: add the nodes fresh (or reopen an earlier save) and set them again.**
 
