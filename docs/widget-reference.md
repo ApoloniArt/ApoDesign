@@ -79,6 +79,9 @@ Generated from the code, so it always matches the nodes. Every widget below can 
 | `glyph_mask_output` | bool | `False` |  | Off: the glyph_mask output is plain black and uses no memory. On: it holds the characters' coverage (white where there is ink). Leave off unless you connect glyph_mask. |
 | `transparency` | combo | `rgba` | `rgba`, `separate`, `off` | What to do when the connected mask makes parts of the picture transparent (white = transparent, as core Load Image outputs it). rgba: the image output carries its own alpha channel, so Preview and Save Image show / write real transparency - do NOT add Join Image with Alpha. separate: the image stays plain RGB (transparent areas black) and the alpha output holds the transparency, for Join Image with Alpha or video. off: ignore the mask. An all-opaque mask is ignored automatically. |
 | `invert_mask` | bool | `False` |  | Turn on if the transparency comes out the wrong way round (the subject vanishes and the background stays). Some loaders output white = opaque instead of white = transparent. |
+| `text_order` | combo | `off` | `off`, `in_order`, `in_order_per_row` | off: the usual tone-based choice of characters. in_order: the inked cells are filled with order_text, one letter after another in reading order, so the words can be read (e.g. LEST WE FORGET). in_order_per_row: every row starts the text again. Ramp and shape modes only; edge_strength is ignored. |
+| `order_text` | string | `LEST WE FORGET` |  | The text used by text_order. It repeats, with a space between repeats. Spaces in it leave small gaps between the words. |
+| `order_threshold` | float | `0.15` | 0.0 to 1.0 | text_order only: how dark a cell may be and still get a letter. Higher = fewer letters (only the brighter parts of the picture); 0 = a letter in every cell. Raise brightness or gamma instead if too much of the picture stays empty. |
 
 ## ApoDesign Pixel Art
 
