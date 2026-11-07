@@ -105,6 +105,7 @@ WIDGETS (name - allowed values - default - what it does)
 - sharpen - 0.0 to 4.0 - default 0.0 - Sharpen before conversion, so fine detail survives.
 - local_contrast - 0.0 to 2.0 - default 0.0 - Local contrast boost so shadows and highlights keep structure.
 - invert - true/false - default False - Invert the picture before conversion.
+- text_order - one of: off, in_order, in_order_per_row - default off - off: the usual tone-based choice of characters.
 
 [pixel_art]
 - pixel_size - 1 to 128 - default 4 - Size of each chunky pixel, in source pixels.
