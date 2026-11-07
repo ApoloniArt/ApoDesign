@@ -22,6 +22,9 @@ Turns any image (or batch / video frames) into text art, drawn as an image, and 
 | `edge_strength` | Ramp mode: draws `\| / - \\` along strong edges so outlines read as line work |
 | `method`, `bayer_size`, `dither_strength` | Dithers the character choice: `none` is clean classic ASCII, `bayer` / `blue_noise` are steady on video, error diffusion is organic but shimmers slightly |
 
+## Readable text (text_order)
+Turn `text_order` to `in_order` and the picture is drawn with your own words instead of tone-picked characters: `order_text` (default `LEST WE FORGET`) is laid into every inked cell in reading order, left to right and top to bottom, and repeats. `in_order_per_row` restarts the text on each row. Which cells count as inked follows the picture's tones (so `gamma`, `brightness`, `contrast`, `method` and `order_threshold` shape the figure); a higher `order_threshold` leaves more cells empty. Ramp and shape modes only (braille and `edge_strength` are ignored). Cells made transparent by a mask never take a letter.
+
 ## Colour: black & white, colour, or any mix
 `polarity` chooses `light_on_dark` (terminal look) or `dark_on_light` (ink on paper). The darkest and lightest colours of the palette become page and ink; with `ink_paper` those are your `ink_color` and `paper_color`.
 
