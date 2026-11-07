@@ -146,5 +146,19 @@ SPECS = [
          tip="Turn on if the transparency comes out the wrong way round "
              "(the subject vanishes and the background stays). Some loaders "
              "output white = opaque instead of white = transparent."),
+    Spec("text_order", "combo", "off", choices=["off", "in_order", "in_order_per_row"],
+         tip="off: the usual tone-based choice of characters. in_order: the "
+             "inked cells are filled with order_text, one letter after "
+             "another in reading order, so the words can be read (e.g. LEST "
+             "WE FORGET). in_order_per_row: every row starts the text again. "
+             "Ramp and shape modes only; edge_strength is ignored."),
+    Spec("order_text", "string", "LEST WE FORGET", promptable=False,
+         tip="The text used by text_order. It repeats, with a space between "
+             "repeats. Spaces in it leave small gaps between the words."),
+    Spec("order_threshold", "float", 0.15, 0.0, 1.0, step=0.01, promptable=False,
+         tip="text_order only: how dark a cell may be and still get a letter. "
+             "Higher = fewer letters (only the brighter parts of the picture); "
+             "0 = a letter in every cell. Raise brightness or gamma instead "
+             "if too much of the picture stays empty."),
 ]
 SPEC_BY_NAME = {s.name: s for s in SPECS}

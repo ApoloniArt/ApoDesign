@@ -146,6 +146,23 @@ def gid_to_text(g, kept, braille, opaque=None):
     return "\n".join(lines)
 
 
+def apply_text_order(gid, ink_g, seq_ids, blank_id, opaque, per_row):
+    """Replace the glyph of every inked cell by the next letter of the text.
+    gid (n,rows,cols) atlas ids; ink_g (G,) bool: which glyphs count as ink;
+    seq_ids (L,) atlas id of each text position. Reading order = left to
+    right, top to bottom; transparent cells never take a letter."""
+    ink = ink_g[gid]
+    if opaque is not None:
+        ink = ink & (opaque[:, 0] > 0.5)
+    n, rows, cols = ink.shape
+    if per_row:
+        k = torch.cumsum(ink.long(), dim=2) - 1
+    else:
+        k = (torch.cumsum(ink.reshape(n, -1).long(), dim=1) - 1).reshape(n, rows, cols)
+    letters = seq_ids[k.clamp_min(0) % seq_ids.shape[0]]
+    return torch.where(ink, letters, torch.full_like(gid, blank_id))
+
+
 # --------------------------------------------------------------------------
 # render
 # --------------------------------------------------------------------------
@@ -173,6 +190,9 @@ def render(image, mask, v, device, alpha=None, rgba=False):
         notes.append(note)
     smooth = v["glyph_style"] == "smooth"
     ramp_t = edge_ids = None
+    order_on = False
+    if match == "braille" and v["text_order"] != "off":
+        notes.append("text_order does not work with braille; ignored")
     dens = None
     scale = 1.0
     if match == "braille":
@@ -180,15 +200,21 @@ def render(image, mask, v, device, alpha=None, rgba=False):
         atlas_np = braille_atlas(cw, ch)
     else:
         chars = resolve_charset(v)
-        want_edges = match == "ramp" and float(v["edge_strength"]) > 0.0
-        kept, atlas_np = get_atlas(chars + (EDGE_CHARS if want_edges else ""),
-                                   font_path, cw, ch, smooth)
+        order_on = v["text_order"] != "off"
+        phrase = "".join(" " if c in "\r\n\t" else c for c in str(v["order_text"]))
+        if order_on and not phrase.strip():
+            order_on = False
+            notes.append("order_text is empty; text_order ignored")
+        if order_on:
+            phrase = phrase if phrase.endswith(" ") else phrase + " "
+        want_edges = match == "ramp" and float(v["edge_strength"]) > 0.0 and not order_on
+        extra = (EDGE_CHARS if want_edges else "") + (" " + phrase if order_on else "")
+        kept, atlas_np = get_atlas(chars + extra, font_path, cw, ch, smooth)
         in_ramp = set(chars)
         ids = [i for i, c in enumerate(kept) if c in in_ramp]
         if len(ids) < 2:                            # the font lacked nearly all of them
             notes.append("charset not available in this font; using classic")
-            kept, atlas_np = get_atlas(CHARSETS["classic"] + (EDGE_CHARS if want_edges else ""),
-                                       font_path, cw, ch, smooth)
+            kept, atlas_np = get_atlas(CHARSETS["classic"] + extra, font_path, cw, ch, smooth)
             in_ramp = set(CHARSETS["classic"])
             ids = [i for i, c in enumerate(kept) if c in in_ramp]
         dens = atlas_np.mean(axis=(1, 2))
@@ -198,6 +224,12 @@ def render(image, mask, v, device, alpha=None, rgba=False):
                           dtype=torch.float32, device=device)
         ramp_t = torch.tensor(ids, dtype=torch.long, device=device)
         scale = max(hi, 1e-6)
+        if order_on:
+            blank_id = kept.index(" ") if " " in kept else 0
+            ink_g = torch.zeros(len(kept), dtype=torch.bool, device=device)
+            ink_g[ramp_t] = dn >= float(v["order_threshold"]) + 1e-6
+            seq_ids = torch.tensor([kept.index(c) if c in kept else blank_id for c in phrase],
+                                   dtype=torch.long, device=device)
         if want_edges and all(c in kept for c in EDGE_CHARS):
             edge_ids = torch.tensor([kept.index(c) for c in EDGE_CHARS],
                                     dtype=torch.long, device=device)
@@ -305,6 +337,9 @@ def render(image, mask, v, device, alpha=None, rgba=False):
                 ftone = fine if light_on_dark else 1.0 - fine
                 gid = braille_indices(ftone, method, T_dots, strength, rows, cols)
             del src
+        if order_on:
+            gid = apply_text_order(gid, ink_g, seq_ids, blank_id, ob,
+                                   v["text_order"] == "in_order_per_row")
 
         # -- colours: glyph colour (fg) and page colour (bg) per cell
         fg = fg_m.expand(n, 3, rows, cols)
