@@ -200,6 +200,44 @@ def test_ascii_all_modes():
     assert ascii_render(img, torch.rand(2, 61, 83), v, CPU)["image"].shape == (2, 61, 83, 3)
 
 
+def test_ascii_text_order():
+    """text_order fills the inked cells with the text, in reading order."""
+    phrase = "LEST WE FORGET"
+    bright = torch.ones(1, 80, 160, 3)
+    for charset in ("standard", "letters", "classic"):
+        for match in ("ramp", "shape"):
+            v = _avalues(columns=40, charset=charset, glyph_match=match,
+                         text_order="in_order", order_text=phrase)
+            out = ascii_render(bright, None, v, CPU)
+            lines = out["text"].split("\n")
+            flow = " ".join(ln for ln in lines)
+            letters = [c for c in flow if c != " "]
+            want = list(phrase.replace(" ", "")) * (len(letters) // 12 + 1)
+            assert letters == want[:len(letters)], (charset, match)
+            assert lines[0].startswith("LEST WE FORGET LEST"), (charset, match, lines[0])
+    v = _avalues(columns=40, text_order="in_order_per_row", order_text=phrase)
+    lines = ascii_render(bright, None, v, CPU)["text"].split("\n")
+    assert all(ln.startswith("LEST WE FORGET LEST") for ln in lines)
+    # a black picture inks nothing, so no letters at all
+    v = _avalues(columns=40, text_order="in_order", order_text=phrase)
+    assert ascii_render(torch.zeros(1, 80, 160, 3), None, v, CPU)["text"].strip() == ""
+    # a transparent cell never uses up a letter
+    al = torch.zeros(1, 80, 160)
+    al[:, :, :80] = 1.0
+    v = _avalues(columns=40, text_order="in_order_per_row", order_text=phrase)
+    lines = ascii_render(bright, None, v, CPU, alpha=al)["text"].split("\n")
+    assert all(ln.strip() == "" or ln.lstrip().startswith("LEST") for ln in lines)
+    assert any(ln.startswith(" " * 20 + "LEST") for ln in lines)
+    # empty text and braille are ignored, never an error
+    for over in ({"order_text": "  "}, {"glyph_match": "braille"}):
+        v = _avalues(columns=20, text_order="in_order", **over)
+        out = ascii_render(bright, None, v, CPU)
+        assert out["image"].shape == (1, 80, 160, 3) and out["notes"]
+    # default off: the same picture as before the option existed
+    v0 = _avalues(columns=40)
+    assert v0["text_order"] == "off"
+
+
 def test_ascii_reproduces_the_picture():
     """A left-to-right gradient must come out brighter on the right, for both
     polarities, and inverted when asked to invert."""

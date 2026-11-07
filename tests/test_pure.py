@@ -90,6 +90,17 @@ def test_specs_are_valid():
         assert len(cs) >= 2 and len(set(cs)) == len(cs)
 
 
+def test_text_order_specs():
+    from core import ascii_specs
+    sp = ascii_specs.SPEC_BY_NAME
+    assert sp["text_order"].default == "off"          # off by default: nothing changes
+    assert sp["order_text"].default == "LEST WE FORGET"
+    assert 0.0 <= sp["order_threshold"].default <= 1.0
+    names = [x.name for x in ascii_specs.SPECS]
+    # added at the END so workflows saved before 0.7.5 keep their values in place
+    assert names[-3:] == ["text_order", "order_text", "order_threshold"]
+
+
 def test_nodes_register():
     pkg = _load_package()
     assert set(pkg.NODE_CLASS_MAPPINGS) == {"ApoDesign_Bitmap", "ApoDesign_Ascii", "ApoDesign_PixelArt",
